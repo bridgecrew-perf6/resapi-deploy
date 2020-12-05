@@ -1,0 +1,34 @@
+####
+GET http://localhost:3000/api/tasks
+
+
+####
+GET http://localhost:3000/api/tasks/done
+
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "angular",
+  "description": "trabajo empresa"
+}
+
+###
+GET http://localhost:3000/api/tasks/5fcab959b89fa3072c6bed1a
+
+
+###
+DELETE  http://localhost:3000/api/tasks/5fcab842834606154004a88b
+
+
+###
+PUT http://localhost:3000/api/tasks/edit/5fcab851834606154004a88c
+Content-Type: application/json
+
+{
+  "title": "react",
+  "description": "trabajo empresa"
+}
+
